@@ -1,0 +1,49 @@
+{
+  "models": [
+    "living_room/living_room.gltf",
+  ],
+  "graph": [
+    {
+      "name": "LivingRoom",
+      "model": 0
+    },
+    {
+      "name": "Lights",
+      "children": [
+        {
+          "name": "Sky",
+          "type": "EnvironmentLight",
+          "radianceScale": [ 1, 1, 1 ],
+          "textureIndex": [ 0 ],
+          "rotation": [ 0 ],
+          "path": "LightProbes/lilienstein_4k.exr"
+        }
+      ]
+    },
+    {
+      "name": "Cameras",
+      "children": [
+        {
+          "name": "Default",
+          "type": "PerspectiveCameraEx",
+          "translation": [ 1.710990, 2.385153, 7.954201 ],
+          "rotation": [ -0.105679, 0.120604, 0.012918, 0.986975 ],
+          "verticalFov": 0.7,
+          "zNear": 0.010000,
+          "enableAutoExposure": true,
+          "exposureCompensation": 2.200000,
+          "exposureValue": -2.0
+        }
+      ]
+    },
+    {
+      "name": "SampleSettings",
+      "type": "SampleSettings",
+      "realtimeMode": true,
+      "enableAnimations": true,
+      "enableRTXDI": true
+    }
+  ]
+}
+
+

@@ -1,0 +1,100 @@
+{
+  "models": [
+    "ConvergenceTest/ConvergenceTest.gltf"
+  ],
+  "graph": [
+    {
+      "name": "ConvergenceTest",
+      "model": 0
+    },
+    {
+      "name": "Lights",
+      "children": [
+        {
+          "name": "Sun",
+          "type": "DirectionalLight",
+          "rotation": [ -0.23053890717436290, -0.15879165885860183, -0.68904659427134063, 0.66846975419898436 ],
+          "angularSize": 2.86478877,
+          "color": [ 1.0, 1.0, 1.0 ],
+          "irradiance": 2.0
+        },
+        {
+          "name": "Sky",
+          "type": "EnvironmentLight",
+          "radianceScale": [ 1, 1, 1 ],
+          "textureIndex": [ 0 ],
+          "rotation": [ 0 ],
+          "path": "LightProbes/20060807_wells6_hd.hdr"
+        }
+
+      ]
+    },
+    {
+      "name": "Cameras",
+      "children": [
+        {
+          "name": "Default",
+          "type": "PerspectiveCameraEx",
+          "translation": [ 0.000000, 2.000000, 8.000000 ],
+          "rotation": [ 0.000000, 0.000000, 0.000000, 1.000000 ],
+          "verticalFov": 0.660595,
+          "zNear": 0.001000,
+          "exposureCompensation": 0.0,
+          "enableAutoExposure": false
+        }
+      ]
+    },
+    {
+      "name": "MaterialPatches",
+      "children": [
+        {
+          "name": "Diffuse Transmission",
+          "type": "MaterialPatch",
+          "specularTransmission": 0.0,
+          "diffuseTransmission": 1.0,
+          "nestedPriority": 0
+        },
+        {
+          "name": "Rough Glass",
+          "type": "MaterialPatch",
+          "specularTransmission": 1.0,
+          "diffuseTransmission": 0.0,
+          "nestedPriority": 0
+        },
+        {
+          "name": "Smooth Glass",
+          "type": "MaterialPatch",
+          "specularTransmission": 1.0,
+          "diffuseTransmission": 0.0,
+          "nestedPriority": 0,
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "Thin Diffuse Transmission",
+          "type": "MaterialPatch",
+          "specularTransmission": 0.0,
+          "diffuseTransmission": 1.0,
+          "nestedPriority": 0
+        },
+        {
+          "name": "Thin Glossy Transmission",
+          "type": "MaterialPatch",
+          "specularTransmission": 1.0,
+          "diffuseTransmission": 0.0,
+          "nestedPriority": 0
+        },
+        {
+          "name": "Thin Smooth Transmission",
+          "type": "MaterialPatch",
+          "specularTransmission": 1.0,
+          "diffuseTransmission": 0.0,
+          "nestedPriority": 0,
+          "psdDominantDeltaLobe": 0
+        }
+      ]
+    }
+
+  ]
+}
+
+
