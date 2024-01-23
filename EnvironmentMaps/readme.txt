@@ -1,0 +1,3 @@
+20060807_wells6_hd.hdr HDR light-probes were downloaded from http://dativ.at/lightprobes/ by Bernhard Vogl (salzamt@dativ.at)
+
+All other HDR environment maps in this folder were downloaded from HDRIHaven: https://hdrihaven.com/ by the authors Greg Zaal (https://gregzaal.com/), Andreas Mischok (https://www.artstation.com/andreasmischok), Sergej Majboroda (https://hdrmarket.com/), Oliksiy Yakovlyev (https://www.upwork.com/freelancers/~01773d1a544b565988), Alexander Scholten (https://polyhaven.com/all?a=Alexander%20Scholten), Jarod Guest, Dimitrios Savva and others. These HDR environment maps are licensed under CC0 (public domain).
