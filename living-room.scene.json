@@ -16,7 +16,7 @@
           "radianceScale": [ 1, 1, 1 ],
           "textureIndex": [ 0 ],
           "rotation": [ 0 ],
-          "path": "LightProbes/lilienstein_4k.exr"
+          "path": "EnvironmentMaps/lilienstein_4k_cube_bc6u.dds"
         }
       ]
     },

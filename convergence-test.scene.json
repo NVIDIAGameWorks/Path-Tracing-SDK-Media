@@ -24,7 +24,7 @@
           "radianceScale": [ 1, 1, 1 ],
           "textureIndex": [ 0 ],
           "rotation": [ 0 ],
-          "path": "LightProbes/20060807_wells6_hd.hdr"
+          "path": "EnvironmentMaps/20060807_wells6_hd.hdr"
         }
 
       ]

@@ -65,7 +65,7 @@
           "radianceScale": [ 1, 1, 1 ],
           "textureIndex": [ 0 ],
           "rotation": [ 0 ],
-          "path": "LightProbes/simons_town_rocks_4k.exr"
+          "path": "EnvironmentMaps/simons_town_rocks_4k_cube_bc6u.dds"
         }
       ]
     },
@@ -178,6 +178,16 @@
           "name": "Microwave_MDL",
           "type": "MaterialPatch",
           "roughness": 0.2
+        },
+        {
+          "name": "Light_Exterior_MDL",
+          "type": "MaterialPatch",
+          "shadowNoLFadeout": 0.03
+        },
+        {
+          "name": "Robot",
+          "type": "MaterialPatch",
+          "shadowNoLFadeout": 0.09
         }
       ]
     },

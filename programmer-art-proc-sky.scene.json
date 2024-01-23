@@ -1,0 +1,249 @@
+{
+  "models": [
+    "nested-dielectrics/nested-dielectrics.gltf",
+    "glTF-Sample-Models/2.0/DragonAttenuation/glTF/DragonAttenuation.gltf",
+    "glass-liquid-ice/glass-liquid-ice.gltf",
+    "standing-mirror/standing-mirror.gltf",
+    "glTF-Sample-Models/2.0/BrainStem/glTF/BrainStem.gltf",
+    "mech_drone/scene.gltf",
+    "glTF-Sample-Models/2.0/ABeautifulGame/glTF/ABeautifulGame.gltf",
+    "window/window.gltf"
+  ],
+  "graph": [
+    {
+      "name": "nested-dielectrics",
+      "model": 0
+    },
+    {
+      "name": "TranslucentDragon",
+      "model": 1,
+      "translation": [ -10.0, 1.7, 0.0 ],
+      "scaling": 3.5,
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "GlassLiquidIce",
+      "model": 2,
+      "translation": [ 4.0, -0.4, -3.0 ],
+      "scaling": 0.8,
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "StandingMirror",
+      "model": 3,
+      "translation": [ -2.199085, -1.40, -2.514250 ],
+      "scaling": 2.0,
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "DancingRobot1",
+      "model": 4,
+      "translation": [ -0.425567, -1.2, -3.058180 ],
+      "scaling": 1.0,
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "MechDrone1",
+      "model": 5,
+      "translation": [ -3.5, -1.3, 6.5 ],
+      "scaling": 3.0,
+      "rotation": [ 0, 0, 0, 1 ]
+    },
+    {
+      "name": "MechDrone2",
+      "model": 5,
+      "translation": [ 3.3, -1.3, 3.0 ],
+      "scaling": 3.0,
+      "rotation": [ 0, 0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "Chess",
+      "model": 6,
+      "translation": [ 5.2, -1.25, 3.0 ],
+      "scaling": 3.0,
+      "rotation": [ 0, 0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "Window",
+      "model": 7,
+      "translation": [ 4.0, -0.3, 3.0 ],
+      "scaling": 0.8,
+      "rotation": [ 0, 0, 0, 1 ]
+    },
+    {
+      "name": "Lights",
+      "children": [
+        {
+          "name": "Sky",
+          "type": "EnvironmentLight",
+          "radianceScale": [ 1, 1, 1 ],
+          "textureIndex": [ 0 ],
+          "rotation": [ 0 ],
+          "path": "==PROCEDURAL_SKY=="
+        }
+      ]
+    },
+    {
+      "name": "Cameras",
+      "children": [
+        {
+          "name": "Default",
+          "type": "PerspectiveCameraEx",
+          "translation": [ 24.846075, 7.133135, 15.422275 ],
+          "rotation": [ -0.071883, 0.541528, 0.046544, 0.836310 ],
+          "verticalFov": 0.6,
+          "zNear": 0.100000,
+          "enableAutoExposure": false,
+          "exposureCompensation": 1.700000,
+          "exposureValue": 0.000000
+        }
+      ]
+    },
+    {
+      "name": "MaterialPatches",
+      "children": [
+        {
+          "name": "Dragon with Attenuation",
+          "type": "MaterialPatch",
+          "volumeAttenuationDistance": 0.5
+        },
+        {
+          "name": "Material-1-Cube",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.1, 0.5, 0.99 ],
+          "IoR": 1.45,
+          "nestedPriority": 1,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "Material-1-Sphere",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.99, 0.99, 0.99 ],
+          "IoR": 1.001,
+          "nestedPriority": 2,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "Material-2-Cube",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.1, 0.5, 0.99 ],
+          "IoR": 1.45,
+          "nestedPriority": 2,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "Material-2-Sphere",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.99, 0.2, 0.01 ],
+          "IoR": 1.45,
+          "nestedPriority": 1,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "Material-3-Cube",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.1, 0.5, 0.99 ],
+          "IoR": 1.45,
+          "nestedPriority": 1,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "Material-3-Sphere",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 2.0,
+          "volumeAttenuationColor": [ 0.99, 0.2, 0.01 ],
+          "IoR": 1.45,
+          "nestedPriority": 2,
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "TransparentGlass",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 1.0,
+          "volumeAttenuationColor": [ 0.99, 0.99, 1.0 ],
+          "IoR": 1.52,
+          "nestedPriority": 3,
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "Liquid",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 1.0,
+          "volumeAttenuationColor": [ 0.1, 0.95, 0.1 ],
+          "IoR": 1.333,
+          "nestedPriority": 1
+        },
+        {
+          "name": "Ice",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 10.0,
+          "volumeAttenuationColor": [ 0.2, 0.4, 0.999 ],
+          "IoR": 1.3,
+          "nestedPriority": 2,
+          "specularTransmission": 0.4,
+          "diffuseTransmission": 1.0
+        },
+        {
+          "name": "Pawn_Top_Black",
+          "type": "MaterialPatch",
+          "roughness": 0.0,
+          "metalness": 0.0,
+          "normalTextureScale": 0.4,
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "Pawn_Top_White",
+          "type": "MaterialPatch",
+          "psdExclude": true
+        },
+
+        {
+          "name": "Chessboard",
+          "type": "MaterialPatch"
+        },
+        {
+          "name": "LMBR_000006e_Glass_Exterior",
+          "type": "MaterialPatch",
+          "doubleSided": false,
+          "thinSurface": true,
+          "excludeFromNEE": true,
+          "IoR": 1.8,
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "LMBR_000006f_Glass_Interior",
+          "type": "MaterialPatch",
+          "doubleSided": false,
+          "thinSurface": true,
+          "excludeFromNEE": true,
+          "IoR": 1.8,
+          "psdDominantDeltaLobe": 0
+        }
+      ]
+    },
+    {
+      "name": "SampleSettings",
+      "type": "SampleSettings",
+      "realtimeMode": true,
+      "enableAnimations": true,
+      "enableRTXDI": false,
+      "startingCamera": -1
+    }
+  ]
+}
+
+

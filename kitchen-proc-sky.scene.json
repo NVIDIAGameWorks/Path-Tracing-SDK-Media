@@ -1,0 +1,208 @@
+{
+  "models": [
+    "kitchen/kitchen.gltf",
+    "glass-liquid-ice/glass-liquid-ice.gltf",
+    "free_pothos_potted_plant_-_money_plant/scene.gltf",
+    "plant_pot_ivy/scene.gltf",
+    "mech_drone/scene.gltf"
+  ],
+  "graph": [
+    {
+      "name": "Kitchen",
+      "model": 0
+    },
+    {
+      "name": "GlassLiquidIce",
+      "model": 1,
+      "translation": [ -0.1, 0.91, -1.5 ],
+      "scaling": 0.05,
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "Plant",
+      "model": 2,
+      "translation": [ -2.118954, 0, 2.726503 ],
+      "scaling": 0.7
+    },
+    {
+      "name": "PlantPotIvy_0",
+      "model": 3,
+      "translation": [ -2.34, 0.99, 1.74 ],
+      "rotation": [ 0, -0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "PlantPotIvy_1",
+      "model": 3,
+      "translation": [ -2.14, 0.99, 2.04 ],
+      "rotation": [ -0.7071068, 0, 0.7071068 ]
+    },
+    {
+      "name": "PlantPotIvy_2",
+      "model": 3,
+      "translation": [ -1.94, 0.99, 1.74 ],
+      "rotation": [ 0, 0.7071068, 0, -0.7071068 ]
+    },
+    {
+      "name": "MechDrone",
+      "model": 4,
+      "translation": [ -0.22, 0.85, -2.61 ],
+      "scaling": 0.6,
+      "rotation": [ 0, 1, 0, 0 ]
+    },
+    {
+      "name": "MechDroneInMicrowave",
+      "model": 4,
+      "translation": [ -2.1, 1.03, -2.0 ],
+      "rotation": [ 0, 0.7071068, 0, -0.7071068 ],
+      "scaling": 0.4
+    },
+    {
+      "name": "Lights",
+      "children": [
+        {
+          "name": "Sky",
+          "type": "EnvironmentLight",
+          "radianceScale": [ 1, 1, 1 ],
+          "textureIndex": [ 0 ],
+          "rotation": [ 0 ],
+          "path": "==PROCEDURAL_SKY=="
+        }
+      ]
+    },
+    {
+      "name": "Cameras",
+      "children": [
+        {
+          "name": "Default",
+          "type": "PerspectiveCameraEx",
+          "translation": [ 1.211005, 1.804751, 3.852390 ],
+          "rotation": [ -0.020305, 0.224962, 0.004690, 0.974145 ],
+          "verticalFov": 0.628029,
+          "zNear": 0.010000,
+          "enableAutoExposure": true,
+          "exposureCompensation": 1.5,
+          "exposureValueMin": -4.0,
+          "exposureValueMax": 5.0,
+          "exposureValue" :  -2.0
+        }
+      ]
+    },
+    {
+      "name": "MaterialPatches",
+      "children": [
+        {
+          "name": "Glass",
+          "type": "MaterialPatch",
+          "specularTransmission": 1.0
+        },
+        {
+          "name": "TransparentGlass",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 1.0,
+          "volumeAttenuationColor": [ 0.99, 0.99, 1.0 ],
+          "IoR": 1.52,
+          "nestedPriority": 3,
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "Liquid",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 0.04,
+          "volumeAttenuationColor": [ 0.1, 0.98, 0.4 ],
+          "IoR": 1.333,
+          "nestedPriority": 1
+        },
+        {
+          "name": "Ice",
+          "type": "MaterialPatch",
+          "volumeThicknessFactor": 1.0,
+          "volumeAttenuationDistance": 1.0,
+          "volumeAttenuationColor": [ 0.1, 0.2, 0.99 ],
+          "IoR": 1.3,
+          "nestedPriority": 2,
+          "specularTransmission": 0.7,
+          "diffuseTransmission": 1.0,
+          "roughness": 0.2
+        },
+        {
+          "name": "Glass",
+          "type": "MaterialPatch",
+          "psdDominantDeltaLobe": 0
+        },
+        {
+          "name": "GlassMicrowave",
+          "type": "MaterialPatch",
+          "psdDominantDeltaLobe": 0,
+          "IoR": 2.0,
+          "excludeFromNEE": true
+        },
+        {
+          "name": "POTHOS_Mat",
+          "type": "MaterialPatch",
+          "domain": "AlphaTested"
+        },
+        {
+          "name": "Light_LightBulbs",
+          "type": "MaterialPatch",
+          "emissiveIntensity": 30
+        },
+        {
+          "name": "Stove_MDL",
+          "type": "MaterialPatch",
+          "psdExclude": true
+        },
+        {
+          "name": "Burner_Metal_MDL",
+          "type": "MaterialPatch",
+          "psdExclude": true
+        },
+        {
+          "name": "Floor_MDL",
+          "type": "MaterialPatch",
+          "roughness": 0,
+          "metalness": 0
+        },
+        {
+          "name": "Walls_MDL",
+          "type": "MaterialPatch",
+          "roughness": 1.0
+        },
+        {
+          "name": "Table_MDL",
+          "type": "MaterialPatch",
+          "roughness": 0.1
+        },
+        {
+          "name": "Microwave_MDL",
+          "type": "MaterialPatch",
+          "roughness": 0.2
+        },
+        {
+          "name": "Light_Exterior_MDL",
+          "type": "MaterialPatch",
+          "shadowNoLFadeout": 0.03
+        },
+        {
+          "name": "Robot",
+          "type": "MaterialPatch",
+          "shadowNoLFadeout": 0.09
+        }
+      ]
+    },
+    {
+      "name": "SampleSettings",
+      "type": "SampleSettings",
+      "realtimeMode": true,
+      "enableAnimations": true,
+      "enableRTXDI": true,
+      "realtimeFireflyFilter": 0.25,
+      "maxBounces": 15,
+      "realtimeMaxDiffuseBounces": 3,
+      "referenceMaxDiffuseBounces": 6
+    }
+  ]
+}
+
+
