@@ -35,12 +35,12 @@
         {
           "name": "Default",
           "type": "PerspectiveCameraEx",
-          "translation": [ 7.548285, 1.611793, -4.109409 ],
-          "rotation": [ -0.044203, 0.863331, 0.076813, 0.496796 ],
-          "verticalFov": 0.399597,
+          "translation": [ -6.033879, -1.067553, 4.060103 ],
+          "rotation": [ 0.078348, -0.349519, 0.029343, 0.933186 ],
+          "verticalFov": 0.6,
           "zNear": 0.100000,
           "enableAutoExposure": false,
-          "exposureCompensation": 2.000000,
+          "exposureCompensation": -0.500000,
           "exposureValue": 0.000000
         }
       ]
@@ -49,7 +49,7 @@
       "name": "SampleSettings",
       "type": "SampleSettings",
       "realtimeMode": true,
-      "enableAnimations": false,
+      "enableAnimations": true,
       "enableRTXDI": false
     }
   ]
